@@ -1,0 +1,21 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "dotenv": "^16.0.3",
+    "hardhat": "^2.14.0",
+    "hardhat-gas-reporter": "^1.0.9"
+  },
+  "dependencies": {
+    "@morenabarboni/sumo": "^1.2.1",
+    "@openzeppelin/contracts": "^4.8.3"
+  },
+  "scripts": {
+    "types": "npx hardhat typechain && cat typechain-types/contracts/ElementalFusion.ts > client/src/contracts/ElementalFusion.sol/ElementalFusion.ts && cat artifacts/contracts/ElementalFusion.sol/ElementalFusion.json > client/src/contracts/ElementalFusion.sol/ElementalFusion.json",
+    "test": "npx hardhat test",
+    "_test": "npx hardhat test --network localhost",
+    "deploy": "npx hardhat run scripts/deploy.ts --show-stack-traces",
+    "ganache": "ganache -m \"because verify mushroom captain zebra mandate require canvas bounce danger priority opinion\""
+  }
+}

@@ -1,0 +1,26 @@
+# .gitignore
+
+# Dependencies
+node_modules
+
+# Build output
+.next
+out
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor and operating system specific files
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+*.sublime*
+*.iml
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

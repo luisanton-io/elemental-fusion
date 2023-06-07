@@ -1,0 +1,13 @@
+#main {
+    > div:last-of-type {
+        grid-column: span 3;
+        transform: scale(1.3);
+    }
+
+    div[data-elemental] {
+        background-image: var(--bg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
